@@ -1,0 +1,11 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cc.black.mapper.PhotoLibraryInfoMapper" >
+
+    <!-- 查询某个时间段数据 -->
+    <select id="list" resultType="cc.black.model.vo.PhotoLibraryInfoVO">
+        SELECT url FROM photo_library_info
+        WHERE STR_TO_DATE(create_time,'%Y-%m')
+        BETWEEN STR_TO_DATE(#{startTime},'%Y-%m') AND STR_TO_DATE(#{endTime},'%Y-%m')
+    </select>
+
+</mapper>

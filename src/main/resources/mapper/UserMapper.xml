@@ -1,8 +1,0 @@
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="cc.black.mapper.UserMapper" >
-
-<!--    <select id="getUserByUserName" resultType="com.cun.model.User">-->
-<!--        select p.user_name as userName, p.id from p_user p where p.user_name=#{userName}-->
-<!--    </select>-->
-
-</mapper>
